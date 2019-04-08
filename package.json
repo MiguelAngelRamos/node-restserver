@@ -10,7 +10,11 @@
   "author": "Miguel Ramos",
   "license": "MIT",
   "dependencies": {
+    "bcrypt": "^3.0.5",
     "body-parser": "^1.18.3",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongoose": "^5.4.22",
+    "mongoose-unique-validator": "^2.0.2",
+    "underscore": "^1.9.1"
   }
 }
