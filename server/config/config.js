@@ -18,7 +18,7 @@ process.env.CADUCIDAD_TOKEN = '48h';
 // ====================
 //  SEED de autenticación
 //=====================
-process.env.SEED = process.env.SEED || 'este-es-el-seed-desarrollo';
+process.env.SEED = process.env.SEED || 'este-es-el-seed-desarrollo'; // en heroku existe una variable para produccion
 
 
 // ====================
@@ -28,7 +28,7 @@ let urlDB;
 if(process.env.NODE_ENV === 'dev'){
   urlDB = 'mongodb://localhost:27017/cafe';
 } else {
-  urlDB = process.env.MONGO_URI;
+  urlDB = process.env.MONGO_URI; // MONGO_URI es una variable de configuracion que defini en heroku
 }
 process.env.URLDB = urlDB;
 
